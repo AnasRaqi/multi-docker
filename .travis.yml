@@ -23,4 +23,5 @@ after_success:
   - docker push -t araqi/multi-nginx
   - docker push -t araqi/multi-server
   - docker push -t araqi/multi-worker
-#this is the end of travis configuration file 
+#this is the end of travis configuration file .
+# docker push to private repos. 
