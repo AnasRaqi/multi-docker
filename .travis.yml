@@ -19,9 +19,9 @@ after_success:
 # first we need to login to docker cli 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 # push images to docker hub
-  - docker push -t  araqi/multi-client
-  - docker push -t araqi/multi-nginx
-  - docker push -t araqi/multi-server
-  - docker push -t araqi/multi-worker
+  - docker push araqi/multi-client
+  - docker push araqi/multi-nginx
+  - docker push araqi/multi-server
+  - docker push araqi/multi-worker
 #this is the end of travis configuration file .
 # docker push to private repos. 
